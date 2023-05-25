@@ -19,7 +19,7 @@ body {
   background-color: var(--background);
 }
 /*main*/
-.dispositivos {
+#dispositivos {
     text-align: center;
 }
 
@@ -32,18 +32,11 @@ body {
     font-size: 32px;
     color: var(--title-color);
 }
-#dispositivos__favoritos h2 {
-  font-size: 48px;
-  color: var(--title-color);
-}
-#dispositivos__favoritos{
-  text-align: center;
-}
-.dispositivos__favoritos__assents{
-    display: inline-block;
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 32px;
+.dispositivos__lista {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 5em 0;
 }
 /*Footer*/
 footer {
