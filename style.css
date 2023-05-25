@@ -19,6 +19,23 @@
 body {
   background-color: var(--background);
 }
+/*header*/
+#banner{
+    background-image: url(assents/Background.png);
+}
+.banner__conteudo{
+    display: flex;
+    flex-direction: column;
+}
+.banner__texto p{
+    color: var(--p-color);
+    font-size: 12px;
+}
+
+.banner__titulo h1{
+    color: var(--title-color);
+    font-size: 28px;
+}
 /*main*/
 #plataforma{
     color: var(--title-color);
