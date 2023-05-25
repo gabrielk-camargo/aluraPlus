@@ -5,6 +5,7 @@
   --p-color: #c0c0c0;
   --a-color: #6b6767;
   --button-color: #167bf7;
+  --button-hover: #6babfa;
   --background: #00030c;
   --font-family: "Inter", sans-serif;
 }
@@ -19,12 +20,42 @@ body {
   background-color: var(--background);
 }
 /*main*/
+#plataforma{
+    color: var(--title-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plataforma__texto h2{
+    font-size: 48px;
+}
+.plataforma__texto p{
+    color: var(--p-color);
+}
+#plataforma__curso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 264px;
+    color: var(--p-color)
+}
 #cursos__plataforma{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 264px;
     color: var(--title-color);
+}
+button{
+    background-color: var(--button-color);
+    color: var(--title-color);
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+}
+button:hover{
+    background-color: var(--button-hover);
+    cursor: pointer;
 }
 .cursos__plataforma__texto h2{
     font-size: 48px;
