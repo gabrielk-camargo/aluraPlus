@@ -19,6 +19,20 @@ body {
   background-color: var(--background);
 }
 /*main*/
+#cursos__plataforma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 264px;
+    color: var(--title-color);
+}
+.cursos__plataforma__texto h2{
+    font-size: 48px;
+}
+.cursos__plataforma__texto p{
+    font-size: 16px;
+    color: var(--p-color)
+}
 #dispositivos {
     text-align: center;
 }
