@@ -3,9 +3,9 @@
 :root {
   --title-color: #ffffff;
   --p-color: #c0c0c0;
-  --a-color: #6b6767;
-  --button-color: #167bf7;
-  --button-hover: #6babfa;
+  --a-color: #7a7878;
+  --button-color: #2e83eb;
+  --button-hover: #0073ff;
   --background: #00030c;
   --font-family: "Inter", sans-serif;
 }
@@ -20,93 +20,122 @@ body {
   background-color: var(--background);
 }
 /*header*/
-#banner{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(assents/Background.png);
-    
+#banner {
+  align-items: baseline;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assents/Background.png);
 }
-.banner__conteudo{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.banner__ancoras {
+  display: block;
 }
-.banner__texto p{
-    color: var(--p-color);
-    font-size: 12px;
+.banner__conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 70%;
+  gap: 30px;
+  padding-top: 90px;
+  height: 100vh;
+}
+.banner__texto p {
+  color: var(--p-color);
+  font-size: 12px;
 }
 
-.banner__titulo h1{
-    color: var(--title-color);
-    font-size: 28px;
+.banner__titulo h1 {
+  color: var(--title-color);
+  font-size: 28px;
+}
+.valor button {
+  color: var(--p-color);
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  padding: 25px 100px;
+  margin: 15px;
+}
+.assinar button {
+  color: var(--p-color);
+  background-color: transparent;
+  border: solid 1px var(--title-color);
+  border-radius: 5px;
+  padding: 25px 100px;
+  margin: 15px;
+}
+.valor button:hover{
+    background: var(--button-hover);
+}
+.assinar button:hover{
+    background-color: var(--a-color);
 }
 /*main*/
-#plataforma{
-    color: var(--title-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#plataforma {
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.plataforma__texto h2{
-    font-size: 48px;
+.plataforma__texto h2 {
+  font-size: 48px;
 }
-.plataforma__texto p{
-    color: var(--p-color);
+.plataforma__texto p {
+  color: var(--p-color);
 }
-#plataforma__curso{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 264px;
-    color: var(--p-color)
+#plataforma__curso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 264px;
+  color: var(--p-color);
 }
-#cursos__plataforma{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 264px;
-    color: var(--title-color);
+#cursos__plataforma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 264px;
+  color: var(--title-color);
 }
-.plataforma__curso__texto button{
-    background-color: var(--button-color);
-    color: var(--title-color);
-    padding: 16px 24px;
-    border-radius: 8px;
-    border: none;
+.plataforma__curso__texto button {
+  background-color: var(--button-color);
+  color: var(--title-color);
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: none;
 }
-button:hover{
-    background-color: var(--button-hover);
-    cursor: pointer;
+.plataforma__curso__texto button:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
 }
-.cursos__plataforma__texto h2{
-    font-size: 48px;
+.cursos__plataforma__texto h2 {
+  font-size: 48px;
 }
-.cursos__plataforma__texto p{
-    font-size: 16px;
-    color: var(--p-color)
+.cursos__plataforma__texto p {
+  font-size: 16px;
+  color: var(--p-color);
 }
 #dispositivos {
-    text-align: center;
+  text-align: center;
 }
 
 .dispositivos__titulo {
-    font-size: 48px;
-    color: var(--title-color);
+  font-size: 48px;
+  color: var(--title-color);
 }
 
 .lista__item {
-    font-size: 32px;
-    color: var(--title-color);
+  font-size: 32px;
+  color: var(--title-color);
 }
 .dispositivos__lista {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        margin: 5em 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0;
 }
 /*Footer*/
 footer {
-    margin-top: 145px;
+  margin-top: 145px;
   text-align: center;
   color: var(--p-color);
   margin-bottom: 50px;
