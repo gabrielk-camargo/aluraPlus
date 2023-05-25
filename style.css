@@ -21,11 +21,15 @@ body {
 }
 /*header*/
 #banner{
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(assents/Background.png);
+    
 }
 .banner__conteudo{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 .banner__texto p{
     color: var(--p-color);
